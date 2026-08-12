@@ -1,16 +1,102 @@
-# React + Vite
+# 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, animated personal portfolio for **Saurabh Bharadwaj**, a Frontend Developer. Built with **React**, **Vite**, and **GSAP**, featuring a dark immersive theme with scroll-driven animations, a custom cursor, and a horizontal-scroll projects showcase.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Custom cursor** with hover labels (e.g. `GO`, `VIEW`, `SHOW`) on interactive elements
+- **Global parallax background** with animated blobs
+- **Navbar** that auto-hides on scroll down and reappears on scroll up
+- **Hero section** with staggered GSAP entrance animations
+- **About** with word-by-word `SplitText` reveal animations
+- **Skills** grid with 3D tilt-on-hover cards
+- **Experience** timeline with a scroll-linked progress line
+- **Projects** horizontal scroll section (pinned with `ScrollTrigger`), image hover zoom, and image parallax
+- **Achievements** with animated count-up counters
+- **Contact** section with a magnetic "Let's Talk" button
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** + **Vite 7**
+- **GSAP** (with `@gsap/react`, `ScrollTrigger`, and `SplitText` plugins)
+- **JavaScript (ES Modules)**
+- **CSS** (custom styling in `src/index.css`)
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Navbar.jsx            # Auto-hiding navigation bar
+│   ├── Hero.jsx              # Hero section with entrance animations
+│   ├── About.jsx             # About section with SplitText animations
+│   ├── Skills.jsx            # Skills grid with tilt-on-hover cards
+│   ├── Experience.jsx        # Timeline with scroll progress line
+│   ├── Projects.jsx          # Horizontal scroll projects showcase
+│   ├── Education.jsx         # Education list
+│   ├── Achievements.jsx      # Count-up achievement counters
+│   ├── Contact.jsx           # Contact with magnetic button
+│   ├── CustomCursor.jsx      # Custom cursor with hover labels
+│   └── GlobalParallax.jsx    # Parallax blob background
+├── animations/               # Animation helper placeholders
+├── projects/                 # Project images
+├── App.jsx                   # Main app composition
+├── index.css                 # Global styles
+└── main.jsx                  # React entry point
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+Open the printed local URL (usually `http://localhost:5173`).
+
+### Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## 📄 Scripts
+
+| Script     | Description                          |
+| ---------- | ------------------------------------ |
+| `dev`      | Start the Vite development server    |
+| `build`    | Build the project for production     |
+| `preview`  | Preview the production build locally |
+| `lint`     | Run ESLint on the project            |
+
+## 🎨 Sections
+
+1. **Hero** — name, role, and tagline
+2. **About** — intro and goal
+3. **Skills** — HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB
+4. **Experience** — Frontend Intern @ Biosoftech Solution Pvt. Ltd. (2026), B.Tech CSE (2025), Full Stack Development (2024)
+5. **Projects** — AI Fitness Trainer, 3D Portfolio, E-Commerce Platform, Real-Time Chat App, Analytics Dashboard
+6. **Education** — B.Tech CSE, Noida Institute of Engineering and Technology (2021–2025)
+7. **Achievements** — animated stats (landing pages, projects, technologies, internships)
+8. **Contact** — "Let's Talk" magnetic CTA
+
+## 📄 License
+
+This project is for personal use. Feel free to use it as a reference for building your own animated portfolio.
