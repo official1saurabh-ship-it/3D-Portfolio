@@ -52,6 +52,7 @@ function Hero() {
           opacity: 0,
           duration: 0.6,
           ease: "back.out",
+          scrub: true,
         },
         "-=0.2",
       );
@@ -61,7 +62,7 @@ function Hero() {
     <section className="hero">
       <p className="hero-intro">HELLO, I'M</p>
 
-      <h1 className="hero-name">SAURABH BHARADWAJ</h1>
+      <h1 className="hero-name">SAURABH DUBEY</h1>
 
       <h2 className="hero-role">FRONTEND DEVELOPER</h2>
 

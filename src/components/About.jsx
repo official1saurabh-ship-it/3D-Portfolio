@@ -56,6 +56,7 @@ const About = () => {
           opacity: 0,
           duration: 0.7,
           ease: "power3.out",
+          scrub: 1,
         },
         "-=0.2",
       );
