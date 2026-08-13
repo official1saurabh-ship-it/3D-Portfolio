@@ -75,8 +75,6 @@ function Projects() {
           anticipatePin: 1,
 
           invalidateOnRefresh: true,
-
-          markers: true,
         },
       });
 
